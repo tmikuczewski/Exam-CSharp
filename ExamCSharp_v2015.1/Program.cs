@@ -25,6 +25,18 @@ namespace ExamCSharp_v2015._1
 			Console.WriteLine(ulamek3 * ulamek4);
 			// /zad05
 			Console.WriteLine();
+
+			// zad06
+			A a = new A();
+			B b = new B();
+			a.Z += new BoolDelegate(b.MB);
+			for (int i = 0; i < 6; i++)
+			{
+				a.MA();
+				Console.WriteLine("b: {0} i: {1}", a.Wartosc, b.IleRazy);
+			}
+			// /zad06
+			Console.WriteLine();
 		}
 	}
 }
