@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExamCSharp_2015._2
+namespace ExamCSharp_v2015._2
 {
-	class Zad04
+	class Program
 	{
+		static void Main(string[] args)
+		{
+		}
 	}
 }
