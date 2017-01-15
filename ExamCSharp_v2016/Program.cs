@@ -24,6 +24,30 @@ namespace ExamCSharp_v2016
 			Console.WriteLine(iloczynSkalarny.ToString());
 			Console.WriteLine(w);
 			// /zad08
+			Console.WriteLine();
+
+			// zad09
+			KontoBankowe[] listaKont = new KontoBankowe[]
+			{
+				new KontoStudent("569800230038165276", 100),
+				new KontoStudent("257500243397412677", 250),
+				new KontoFirma("357692760032000053", 1000),
+				new KontoFirma("557463669700009483", 2500)
+			};
+			foreach (KontoBankowe konto in listaKont)
+			{
+				Console.WriteLine(konto);
+			}
+			Console.WriteLine(" -5zł");
+			foreach (KontoBankowe konto in listaKont)
+			{
+				konto.Wyplata(5);
+			}
+			foreach (KontoBankowe konto in listaKont)
+			{
+				Console.WriteLine(konto);
+			}
+			// /zad09
 		}
 	}
 }
