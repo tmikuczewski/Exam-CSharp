@@ -46,6 +46,14 @@ namespace ExamCSharp_v2015._2
 			kp.Wyplata(kp.Stan + 1000);
 			Console.WriteLine("KontoPrem: " + kp.Stan);
 			// /zad05
+			Console.WriteLine();
+
+			// zad06
+			K1 k1 = new K1();
+			K2 k2 = new K2();
+			k1.Z1 += k2.M2;
+			k1.M1();
+			// /zad06
 		}
 	}
 }
