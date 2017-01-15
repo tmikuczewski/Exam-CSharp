@@ -25,6 +25,27 @@ namespace ExamCSharp_v2015._2
 			Console.WriteLine($"Ad1. x1: {pierwiastki[0, 0]}, x2: {pierwiastki[1, 0]}");
 			// /zad04
 			Console.WriteLine();
+
+			// zad05
+			KontoStandard ks = new KontoStandard("85502016000023017");
+			KontoPremium kp = new KontoPremium("63724296000024519", 1000);
+
+			ks.Wplata(1000);
+			Console.WriteLine("KontoStd: " + ks.Stan);
+			ks.Wyplata(200);
+			Console.WriteLine("KontoStd: " + ks.Stan);
+
+			kp.Wplata(200);
+			Console.WriteLine("KontoPrem: " + kp.Stan);
+			kp.Wplata(15000);
+			Console.WriteLine("KontoPrem: " + kp.Stan);
+			kp.Wyplata(15000);
+			Console.WriteLine("KontoPrem: " + kp.Stan);
+			kp.Wyplata(1300);
+			Console.WriteLine("KontoPrem: " + kp.Stan);
+			kp.Wyplata(kp.Stan + 1000);
+			Console.WriteLine("KontoPrem: " + kp.Stan);
+			// /zad05
 		}
 	}
 }
