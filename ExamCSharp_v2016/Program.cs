@@ -48,6 +48,17 @@ namespace ExamCSharp_v2016
 				Console.WriteLine(konto);
 			}
 			// /zad09
+			Console.WriteLine();
+
+			// zad10
+			Nadawca nadawca = new Nadawca();
+			Odbiorca odbiorca = new Odbiorca();
+			nadawca.Z += odbiorca.B;
+			for (int i = 0; i < 5; i++)
+			{
+				nadawca.A();
+			}
+			// /zad10
 		}
 	}
 }
